@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Access View">
+        <template if:true={tableData}>
+            <lightning-datatable
+                key-field="Id"
+                data={tableData}
+                columns={columns}
+                hide-checkbox-column
+                hide-default-actions
+                class="custom-datatable"
+            ></lightning-datatable>
+        </template>
+    </lightning-card>
+</template>

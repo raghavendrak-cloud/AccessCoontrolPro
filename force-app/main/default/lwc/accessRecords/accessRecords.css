@@ -1,0 +1,35 @@
+/* Add this CSS to your component's CSS file */
+.custom-datatable {
+    font-family: Arial, sans-serif;
+    border: 1px solid #d8dde6;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-datatable th {
+    background-color: #f4f6f9;
+    border-bottom: 1px solid #d8dde6;
+    text-align: left;
+    padding: 0.5rem; /* Adjust padding for header cells */
+}
+
+.custom-datatable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.custom-datatable td {
+    text-align: left;
+    padding: 0.5rem; /* Adjust padding for table cells */
+    vertical-align: middle; /* Optional: Align content vertically */
+}
+
+/* Applying cell-specific styles */
+.custom-datatable td[data-label="Date requested"],
+.custom-datatable td[data-label="Name"],
+.custom-datatable td[data-label="Requested by"],
+.custom-datatable td[data-label="Requested profile"],
+.custom-datatable td[data-label="Requested permission set"],
+.custom-datatable td[data-label="Expiry Date"],
+.custom-datatable td[data-label="Status"] {
+    background-color: lightblue; /* Apply a light blue background to specific cells */
+}
